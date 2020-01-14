@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+<appender class="org.apache.log4j.ConsoleAppender" name="console">
+  <layout class="org.apache.log4j.PatternLayout">
+<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+  </layout>
+</appender>
+
+<appender class="org.apache.log4j.FileAppender" name="file">
+  <param name="File" value="D:\New folder\AvactisProject\Automatedfile.log"/>
+    <layout class="org.apache.log4j.PatternLayout">
+  <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] (%F:%L) - %m%n"/>
+    </layout>
+</appender>
+<root>
+    <priority value ="INFO"></priority>
+    <appender-ref ref="console"></appender-ref>
+    <appender-ref ref="file"></appender-ref>
+  </root>
+</log4j:configuration>

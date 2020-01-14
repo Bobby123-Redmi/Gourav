@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="273499" started-at="2020-01-14T04:10:29Z" finished-at="2020-01-14T04:15:03Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="273499" started-at="2020-01-14T04:10:29Z" finished-at="2020-01-14T04:15:03Z">
+      <class name="testClasses.PurchaseTest">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="init" is-config="true" duration-ms="13692" started-at="2020-01-14T09:40:29Z" finished-at="2020-01-14T09:40:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="100886" started-at="2020-01-14T09:40:47Z" data-provider="provideDataFromExcel" finished-at="2020-01-14T09:42:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Apparel-pg1-cid35.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[93']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[386']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[390']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)
+	at pageClasses.CartPage.Verifyitems(CartPage.java:40)
+	at testClasses.PurchaseTest.selectProductcategory(PurchaseTest.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+        <test-method status="FAIL" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="43040" started-at="2020-01-14T09:42:28Z" data-provider="provideDataFromExcel" finished-at="2020-01-14T09:43:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Computers-pg1-cid8.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Desktops-pg1-cid21.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Dell_Inspiron_Slim_Desktop-pid18.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[383']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[387']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[391']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Dell_Inspiron_Slim_Desktop-pid18.html']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Dell_Inspiron_Slim_Desktop-pid18.html']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)
+	at pageClasses.CartPage.Verifyitems(CartPage.java:40)
+	at testClasses.PurchaseTest.selectProductcategory(PurchaseTest.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+        <test-method status="FAIL" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="111957" started-at="2020-01-14T09:43:11Z" data-provider="provideDataFromExcel" finished-at="2020-01-14T09:45:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Digital_Distribution-pg1-cid12.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[93']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[386']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[390']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-UFF7VOJ', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir15276_666387843}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51206}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: a7a9d8b8e11330080a6bb30cc1bca38a
+*** Element info: {Using=xpath, value=//tbody//a[@href='http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:179)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:255)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)
+	at pageClasses.CartPage.Verifyitems(CartPage.java:40)
+	at testClasses.PurchaseTest.selectProductcategory(PurchaseTest.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+      </class> <!-- testClasses.PurchaseTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
