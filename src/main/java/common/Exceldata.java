@@ -34,7 +34,7 @@ public class Exceldata {
 	
 	public static Object[][] generateDataArray(List<String> dataList, int rowCount, int columnCount) {
 		//columnCount = columnCount / rowCount;
-		int k = 7;
+		int k = 9;
 		String[][] xlsData = new String[rowCount][columnCount];
 		for (int i = 0; i < rowCount; i++) {
 
@@ -82,7 +82,7 @@ public class Exceldata {
 			}
 		}
 
-		Object[][] output = generateDataArray(records, 3, 7);
+		Object[][] output = generateDataArray(records,3,9);
 
 		System.out.println(Arrays.deepToString(output));
 		return output;

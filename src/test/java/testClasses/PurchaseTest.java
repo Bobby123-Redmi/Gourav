@@ -15,11 +15,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pageClasses.CartPage;
+import pageClasses.CheckoutPage;
 import pageClasses.PurchaseProductPage;
 import pageClasses.StorePage;
 import pageClasses.productPage;
@@ -68,7 +70,7 @@ public class PurchaseTest {
 
 	 
 	 @Test(dataProviderClass=Exceldata.class, dataProvider="provideDataFromExcel")
-	 public void selectProductcategory(String category,String productcategory, String product, String value1, String value2, String value3, String value4) {
+	 public void selectProductcategory(String category,String productcategory, String product, String value1, String value2, String value3, String value4, String name,String Quantity) {
 		 storepage=new StorePage(driver);
 		 storepage.get();
 		 try {
@@ -82,6 +84,7 @@ public class PurchaseTest {
 		 
 		
 		 storepage.clickproductcategory(category);
+		 Assert.assertEquals(driver.getCurrentUrl(),category );
 		 log.info("category link successfully clicked...");
 		 
 		 
@@ -95,6 +98,7 @@ public class PurchaseTest {
 		}
 		 
 		 apppage.selectproduct(productcategory);
+		 Assert.assertEquals(driver.getCurrentUrl(), productcategory);
 		 
 		 
 		 try {
@@ -107,6 +111,7 @@ public class PurchaseTest {
 		 }
 		 
 		 apppage.selectproduct(product);
+		 Assert.assertEquals(driver.getCurrentUrl(), product);
 		 
 		 
 		 PurchaseProductPage purchase=new PurchaseProductPage(driver);
@@ -131,8 +136,8 @@ public class PurchaseTest {
 			 log.error("Exception occured:"+e);
 			
 		 }
-		 
-		 storepage.clickviewcart();
+		 	
+		 storepage.clickviewcart(product,name,Quantity);
 		 try {
 			 Exceldata.takeScreenshot(driver, "C:\\Users\\HP\\Downloads\\screenshot\\Avactis\\GuestPurchasetest\\", "cartpage");
 			 log.info("cartpage opened successfully...");
@@ -142,11 +147,15 @@ public class PurchaseTest {
 			 log.error("Exception occured:"+e);
 			
 		 }
-		 
-		 CartPage cartpage=new CartPage(driver);
-		 cartpage.get();
-		 cartpage.Verifyitems(product);
-		 
+		 try {
+			 CheckoutPage checkoutpage=new CheckoutPage(driver);
+			 checkoutpage.provideAddress();
+			 log.info("Billing and shipping address details captured successfully...");
+				 
+		 }
+		 catch(Exception e) {
+			 log.error("Exception occured:"+e);
+		 }
 		 
 		
 	 }

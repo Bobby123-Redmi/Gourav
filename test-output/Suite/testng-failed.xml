@@ -8,15 +8,4 @@
       <class name="testClasses.PurchaseTest"/>
     </classes>
   </test> <!-- ChromeTest -->
-  <test name="ChromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="testClasses.PurchaseTest">
-        <methods>
-          <include name="selectProductcategory" invocation-numbers="0 1 2"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- testClasses.PurchaseTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
